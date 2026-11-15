@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MOM HOME — постільна білизна</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#fbf8f3;--sf:#fff;--sf2:#f3ece1;--bd:#e6dccb;--tx:#3d342a;--mt:#8a7d6b;--ac:#b89b72;--ac2:#9c7f57;--ok:#6f8a5e;--er:#b5534a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.6 Jost,system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--bd)}
+.hd{display:flex;align-items:center;justify-content:space-between;padding:10px 0;gap:10px}
+.logo{display:flex;align-items:center;gap:10px}.logo svg{width:44px;height:44px}
+.logo b{font:600 24px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:.18em}.logo small{display:block;font-size:10px;letter-spacing:.3em;color:var(--mt)}
+.btn{background:var(--ac2);color:#fff;border:0;border-radius:999px;padding:10px 22px;font-weight:500}
+.btn.o{background:none;color:var(--tx);border:1px solid var(--bd)}.btn.s{padding:6px 14px;font-size:14px}.btn.d{background:var(--er)}
+.hero{background:linear-gradient(135deg,var(--sf2),var(--bg));background-size:cover;background-position:center;padding:84px 0;text-align:center;border-bottom:1px solid var(--bd)}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.1}.hero p{color:var(--mt);max-width:520px;margin:14px auto 24px}
+.logo svg{flex:none}.logo>div{min-width:0}@media(max-width:560px){.wrap{padding:0 12px}.hd{gap:6px}.logo{gap:7px}.logo svg{width:34px;height:34px}.logo b{font-size:18px;letter-spacing:.1em;white-space:nowrap}.logo small{font-size:8px;letter-spacing:.16em;white-space:nowrap}.hd .btn{padding:6px 11px;font-size:13px;white-space:nowrap}.strip{font-size:12px;padding:6px 10px}.hero{padding:52px 0!important}.grid{grid-template-columns:repeat(2,1fr)!important;gap:12px!important}.card .in{padding:10px!important}.card h3{font-size:17px!important}.card .pr{font-size:19px!important}.ph{font-size:40px!important}}
+.cats{display:flex;gap:8px;flex-wrap:wrap;padding:26px 0 8px}
+.chip{border:1px solid var(--bd);background:var(--sf);color:var(--tx);border-radius:999px;padding:7px 18px}.chip.on{background:var(--ac2);color:#fff;border-color:var(--ac2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px;padding:16px 0 40px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.ph{aspect-ratio:1/1;background:var(--sf2);display:flex;align-items:center;justify-content:center;font:600 54px 'Cormorant Garamond',Georgia,serif;color:var(--ac)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.card .in{padding:14px;display:flex;flex-direction:column;gap:4px;flex:1}.card .c{font-size:12px;color:var(--mt);letter-spacing:.1em;text-transform:uppercase}
+.card .pr{font:600 22px 'Cormorant Garamond',Georgia,serif;color:var(--ac2);margin-top:auto}
+.perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;padding:36px 0;text-align:center}
+.perks div{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:18px}.perks b{display:block;font:600 20px 'Cormorant Garamond',Georgia,serif}.perks span{color:var(--mt);font-size:14px}
+footer{background:var(--sf2);border-top:1px solid var(--bd);padding:28px 0;text-align:center;color:var(--mt);font-size:14px}
+.drawer{position:fixed;inset:0;background:#0006;display:none;justify-content:flex-end;z-index:20}.drawer.on{display:flex}
+.panel{background:var(--bg);width:min(420px,100%);height:100%;overflow:auto;padding:20px;padding-top:calc(20px + env(safe-area-inset-top,0px))}
+.row{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--bd)}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--sf);color:var(--tx);font:inherit;margin:4px 0 10px}
+label{font-size:13px;color:var(--mt)}
+.adm{padding:30px 0}.tabs{display:flex;gap:8px;margin:16px 0;flex-wrap:wrap}
+.box{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-bottom:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:560px){.two{grid-template-columns:1fr}}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:8px;border-bottom:1px solid var(--bd);vertical-align:middle}
+.th{width:44px;height:44px;border-radius:8px;object-fit:cover;background:var(--sf2)}
+.strip{background:var(--ac2);color:#fff;text-align:center;padding:8px 12px;font-size:14px;letter-spacing:.04em}.meta{font-size:13px;color:var(--mt);line-height:1.5}.meta b{color:var(--tx);font-weight:500}.note{background:var(--sf2);border:1px solid var(--bd);border-radius:12px;padding:12px;font-size:14px;color:var(--mt);margin:10px 0}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--tx);color:var(--bg);padding:10px 20px;border-radius:999px;display:none;z-index:30}
+</style>
+</head>
+<body>
+<header><div class="wrap hd">
+<a href="#" class="logo" aria-label="MOM HOME">
+<svg viewBox="0 0 64 64" fill="none" stroke="#9c7f57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="29" fill="#f3ece1"/><path d="M14 31 32 15l18 16"/><path d="M19 29v18h26V29" fill="#fff"/><path d="M22 41h20v6H22zM22 41v-4a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v4"/><path d="M32 25.5c-2-2.6-6 .4-3.4 3 1 1 2.400 1.800 3.400 2.500 1-.7 2.400-1.500 3.400-2.500 2.600-2.600-1.400-5.600-3.400-3z" fill="#b89b72" stroke="none"/></svg>
+<div><b>MOM HOME</b><small>ПОСТІЛЬНА БІЛИЗНА</small></div></a>
+<div style="display:flex;gap:8px"><button class="btn o s" id="acctBtn">Кабінет</button><button class="btn s" id="cartBtn">Кошик (<span id="cc">0</span>)</button></div>
+</div></header>
+
+<main id="shop">
+<div class="strip" id="strip"></div><section class="hero" id="hero"><div class="wrap"><h1 id="hT"></h1><p id="hP"></p><a href="#catalog" class="btn" id="hB"></a></div></section>
+<div class="wrap" id="catalog"><div class="cats" id="cats"></div><div class="grid" id="grid"></div>
+<div class="perks"><div><b>Натуральні тканини</b><span>100% бавовна та льон</span></div><div><b>Доставка по Україні</b><span>Нова пошта, 1–3 дні</span></div><div><b>Оплата при отриманні</b><span>Без передоплати</span></div><div><b>Обмін 14 днів</b><span>Якщо щось не підійшло</span></div></div></div>
+<footer><div class="wrap"><div class="serif" style="font-size:22px;letter-spacing:.18em;color:var(--tx)">MOM HOME</div>Постільна білизна для сну, що дарує спокій<br>© 2026 MOM HOME</div></footer>
+</main>
+
+<main id="admin" style="display:none"><div class="wrap adm" id="adm"></div></main>
+
+<div class="drawer" id="drawer"><div class="panel" id="cart"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+var DC=['Комплекти','Простирадла','Підковдри','Наволочки','Дитяча'],DP=[
+{id:'d1',name:'Комплект «Молочний сатин»',cat:'Комплекти',price:2490,sku:'MH-001',fabric:'Сатин 100% бавовна',size:'Двоспальний',kit:'Підковдра, простирадло, 2 наволочки',desc:'М’який сатин молочного кольору.',img:''},
+{id:'d2',name:'Комплект «Бежева ніжність»',cat:'Комплекти',price:2790,sku:'MH-002',fabric:'Ранфорс',size:'Євро',kit:'Підковдра, простирадло, 2 наволочки',desc:'Ніжний бежевий відтінок.',img:''},
+{id:'d3',name:'Простирадло на резинці',cat:'Простирадла',price:890,sku:'MH-003',fabric:'Трикотаж',size:'160×200 см',kit:'Простирадло',desc:'Не мнеться, тримається на матраці.',img:''},
+{id:'d4',name:'Підковдра лляна',cat:'Підковдри',price:1450,sku:'MH-004',fabric:'Льон',size:'200×220 см',kit:'Підковдра',desc:'Натуральний льон.',img:''},
+{id:'d5',name:'Наволочки сатинові (2 шт)',cat:'Наволочки',price:420,sku:'MH-005',fabric:'Сатин',size:'50×70 см',kit:'2 наволочки',desc:'Пудровий беж.',img:''},
+{id:'d6',name:'Дитячий комплект «Хмаринки»',cat:'Дитяча',price:1190,sku:'MH-006',fabric:'Бавовна',size:'Для ліжечка',kit:'Підковдра, простирадло, наволочка',desc:'Гіпоалергенно.',img:''}];
+var DEFIMG='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%201600%20560%22%20preserveAspectRatio=%22xMidYMid%20slice%22%20xmlns:c2pa=%22http://c2pa.org/manifest%22%3E%3Cmetadata%3E%3Cc2pa:manifest%3EAAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo4Y2M1MTQ3Mi02Y2I5LTQwMzMtOTA1NS04ZTljOWExNDI2MDgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaGTDCnbjnXIefYPWKUFr0/YAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoxZjY4NWFmZC05OGE3LTQ2ZWYtOWI4ZS02NmI1ODBjZjM0ZWJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo9s5Yjhl3Jax8uq/DvBIvbQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg/gnWnfooR/9CWT1rIHkYBEYyTwsJrXlTwKzckbwCu0ykZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaAgwtQFDhM6aUd2lj3lNeWMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCDkydTrZf9zc/PYayw4wxWXJC4VRNWalfP%2BJaOe0fQAQWRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBijZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjhjYzUxNDcyLTZjYjktNDAzMy05MDU1LThlOWM5YTE0MjYwOC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjE4NTI3NGRiLTIxYmUtNDM4OC05ZWQ1LTJhOTkwZDg5MGEyYXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCD%2BCdad%2BihH/0JZPWsgeRgERjJPCwmteVPArNyRvAK7TKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggpoYpD4VoDaF/fLPw5JsffOZSmsgYirwhfEvz9hNA3muiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg/2Oo3nt0fh3PVRu13kh9RkLcUQaSQ%2BqamhXPdLUtCuR0Y2xhaW1fZ2VuZXJhdG9yX2luZm%2BjZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj%2BOPEz5o%2BnMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1%2BUCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9%2B1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQNZ3MhOf55HSNPtbACg/spaK308mBdv8uDzECRSkUPAtfVW1EpeFyZaeDTcx%2BamuJGtiVKA80nMomUe67DieYkU=%3C/c2pa:manifest%3E%3C/metadata%3E%3Cdefs%3E%3ClinearGradient%20id=%22bg%22%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23f8f1e6%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23e6d5ba%22/%3E%3C/linearGradient%3E%3ClinearGradient%20id=%22f1%22%20x1=%220%22%20y1=%220%22%20x2=%220%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23fffdf9%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23eadcc4%22/%3E%3C/linearGradient%3E%3ClinearGradient%20id=%22f2%22%20x1=%220%22%20y1=%220%22%20x2=%220%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23e2cfb0%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23cdb591%22/%3E%3C/linearGradient%3E%3CradialGradient%20id=%22pl%22%20cx=%22.4%22%20cy=%22.35%22%20r=%22.8%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%23fffefb%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%23e9dcc6%22/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect%20width=%221600%22%20height=%22560%22%20fill=%22url(%23bg)%22/%3E%3Ccircle%20cx=%221330%22%20cy=%22110%22%20r=%22150%22%20fill=%22%23fff%22%20opacity=%22.35%22/%3E%3Ccircle%20cx=%22260%22%20cy=%2290%22%20r=%2290%22%20fill=%22%23fff%22%20opacity=%22.3%22/%3E%3Cpath%20d=%22M0%20380%20C200%20320%20360%20430%20600%20390%20S1000%20320%201250%20390%20S1520%20360%201600%20340%20V560%20H0Z%22%20fill=%22url(%23f2)%22/%3E%3Cpath%20d=%22M0%20430%20C220%20380%20420%20470%20680%20440%20S1080%20390%201320%20450%20S1540%20430%201600%20410%20V560%20H0Z%22%20fill=%22url(%23f1)%22/%3E%3Cpath%20d=%22M0%20490%20C260%20450%20480%20520%20760%20495%20S1180%20460%201400%20505%20S1560%20490%201600%20480%20V560%20H0Z%22%20fill=%22%23fffaf2%22%20opacity=%22.9%22/%3E%3Cg%20opacity=%22.95%22%3E%3Crect%20x=%2270%22%20y=%22250%22%20width=%22300%22%20height=%22150%22%20rx=%2260%22%20fill=%22url(%23pl)%22%20transform=%22rotate(-8%20220%20325)%22/%3E%3Cpath%20d=%22M120%20300%20Q220%20270%20320%20296%22%20stroke=%22%23d9c7a8%22%20stroke-width=%223%22%20fill=%22none%22%20stroke-linecap=%22round%22%20transform=%22rotate(-8%20220%20325)%22/%3E%3Crect%20x=%221230%22%20y=%22240%22%20width=%22300%22%20height=%22150%22%20rx=%2260%22%20fill=%22url(%23pl)%22%20transform=%22rotate(7%201380%20315)%22/%3E%3Cpath%20d=%22M1280%20292%20Q1380%20262%201480%20290%22%20stroke=%22%23d9c7a8%22%20stroke-width=%223%22%20fill=%22none%22%20stroke-linecap=%22round%22%20transform=%22rotate(7%201380%20315)%22/%3E%3C/g%3E%3Cg%20stroke=%22%23fff%22%20stroke-width=%222%22%20fill=%22none%22%20opacity=%22.7%22%20stroke-linecap=%22round%22%3E%3Cpath%20d=%22M0%20455%20C220%20405%20420%20495%20680%20465%20S1080%20415%201320%20475%20S1540%20455%201600%20435%22/%3E%3Cpath%20d=%22M0%20515%20C260%20475%20480%20545%20760%20520%20S1180%20485%201400%20530%22/%3E%3C/g%3E%3C/svg%3E';
+var LOGIN='admin',PASS='momhome2026',SES='momhome_adm',ST=['Нове','Підтверджено','Відправлено','Доставлено','Скасовано'];
+var db=null,uid=null,isEd=false,cats=DC.slice(),prods=DP.slice(),catDocs=[],profile=null,cart=[],cur='Усі',tab='p',editId=null,mode='cart',imgUrl='',bImg='',bannerDirty=false,ban={},pend='',authTab='',inn=false;try{inn=localStorage.getItem('mh_in')==='1'}catch(e){}
+try{cart=JSON.parse(localStorage.getItem('mh_cart')||'[]')}catch(e){}
+function $(i){return document.getElementById(i)}
+function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function toast(m){var t=$('toast');t.textContent=m;t.style.display='block';setTimeout(function(){t.style.display='none'},2600)}
+function saveCart(){try{localStorage.setItem('mh_cart',JSON.stringify(cart))}catch(e){}}
+function isAdm(){try{return sessionStorage.getItem(SES)==='1'&&isEd}catch(e){return false}}
+function pf(id){return prods.find(function(p){return p.id===id})}
+
+async function init(){
+ try{if(window.claude){db=await claude.use('db');var u=await claude.use('user');if(u){isEd=await u.canEdit();uid=await u.id()}}}catch(e){}
+ if(db){
+  try{
+   db.collection('products').onSnapshot(function(s){var arr=s.docs.map(function(d){return Object.assign({id:d.id},d.data())}).sort(function(a,b){return(b.t||0)-(a.t||0)});prods=(arr.length||isEd)?arr:DP.slice();renderShop();if(isAdm()&&location.hash==='#admin'&&!editId)renderAdmin()},function(){});
+   db.collection('cats').onSnapshot(function(s){catDocs=s.docs.map(function(d){return Object.assign({id:d.id},d.data())}).sort(function(a,b){return(a.t||0)-(b.t||0)});cats=(catDocs.length||isEd)?catDocs.map(function(c){return c.name}):DC.slice();renderShop();if(isAdm()&&location.hash==='#admin'&&tab==='c')renderAdmin()},function(){});
+   db.collection('settings').doc('banner').onSnapshot(function(s){ban=s.exists?s.data():{};if(ban.img){var im=new Image();im.onerror=function(){ban.img='';renderBanner()};im.src=ban.img}renderShop();if(isAdm()&&location.hash==='#admin'&&tab==='b'&&!bImg)renderAdmin()},function(){});
+   if(uid){var p=await db.collection('data/users/'+uid).doc('profile').get();if(p.exists)profile=p.data()}
+  }catch(e){}
+ }
+ renderShop();if(location.hash==='#admin')renderAdmin();
+}
+function meta(p){var m=[];if(p.sku)m.push('Арт. <b>'+esc(p.sku)+'</b>');if(p.fabric)m.push('Тканина: <b>'+esc(p.fabric)+'</b>');if(p.size)m.push('Розмір: <b>'+esc(p.size)+'</b>');if(p.kit)m.push('Комплектація: <b>'+esc(p.kit)+'</b>');return m.length?'<div class="meta">'+m.join('<br>')+'</div>':''}
+function renderBanner(){var s=$('strip');if(!s)return;s.textContent=ban.strip===undefined?'Безкоштовна доставка від 2000 ₴ · Оплата при отриманні':ban.strip;s.style.display=s.textContent?'':'none';$('hT').innerHTML=esc(ban.title||'Затишок, який обіймає щоночі');$('hP').textContent=ban.text||'М’яка постільна білизна з натуральних тканин — бавовна, сатин, льон. Для вашого дому з турботою.';$('hB').textContent=ban.btn||'До каталогу';$('hero').style.backgroundImage=(ban.img||DEFIMG)?'linear-gradient(rgba(251,248,243,.25),rgba(251,248,243,.25)),url("'+(ban.img||DEFIMG).replace(/"/g,'')+'")':''}
+function renderShop(){renderBanner();
+ var cs=['Усі'].concat(cats);
+ $('cats').innerHTML=cs.map(function(c){return '<button class="chip'+(c===cur?' on':'')+'" data-c="'+esc(c)+'">'+esc(c)+'</button>'}).join('');
+ var ps=prods.filter(function(p){return cur==='Усі'||p.cat===cur});
+ $('grid').innerHTML=ps.length?ps.map(function(p){return '<div class="card"><div class="ph">'+(p.img?'<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'">':esc(p.name.charAt(0)))+'</div><div class="in"><span class="c">'+esc(p.cat)+'</span><h3 style="font-size:20px">'+esc(p.name)+'</h3><span style="color:var(--mt);font-size:14px">'+esc(p.desc)+'</span>'+meta(p)+'<div class="pr">'+p.price+' ₴</div><button class="btn s" data-add="'+esc(p.id)+'" style="margin-top:8px">В кошик</button></div></div>'}).join(''):'<p style="color:var(--mt)">У цій категорії поки немає товарів.</p>';
+ $('cc').textContent=cart.reduce(function(a,i){return a+i.q},0);
+}
+function authBlock(){return !db||!uid?'<div class="note">Щоб зареєструватися та оформити замовлення, потрібно увійти в акаунт Claude (claude.ai) у цьому браузері. Після входу оновіть сторінку.</div>':''}
+function logged(){return !!(uid&&db&&profile&&profile.pw&&inn)}
+function rerender(){mode==='cart'?renderCart():renderAcct()}
+function forms(){var t=authTab||(profile&&profile.pw?'in':'reg');
+ var h='<div class="tabs"><button class="chip'+(t==='in'?' on':'')+'" data-at="in">Вхід</button><button class="chip'+(t==='reg'?' on':'')+'" data-at="reg">Реєстрація</button></div>';
+ if(t==='in')return h+'<label>Email або логін</label><input id="lE" type="text" autocomplete="username"><label>Пароль</label><input id="lP" type="password" autocomplete="current-password"><button class="btn" id="loginBtn" style="width:100%">Увійти</button>';
+ return h+'<label>Ім’я та прізвище</label><input id="rN"><label>Телефон</label><input id="rP" type="tel"><label>Email</label><input id="rE" type="email" autocomplete="username"><label>Пароль (мінімум 6 символів)</label><input id="rW" type="password" autocomplete="new-password"><label>Місто та відділення Нової пошти</label><input id="rA"><button class="btn" id="regBtn" style="width:100%">Зареєструватися</button>'}
+function profForm(){return '<label>Ім’я та прізвище</label><input id="pN" value="'+esc(profile.name)+'"><label>Телефон</label><input id="pP" type="tel" value="'+esc(profile.phone)+'"><label>Місто та відділення Нової пошти</label><input id="pA" value="'+esc(profile.addr)+'"><button class="btn" id="profBtn">Зберегти</button> <button class="btn o" id="logoutBtn">Вийти</button><p style="color:var(--mt);font-size:13px">Email: '+esc(profile.email)+'</p>'}
+async function sha(s,salt){var b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(salt+':'+s));return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0')}).join('')}
+function setIn(v){inn=v;try{localStorage.setItem('mh_in',v?'1':'0')}catch(e){}}
+async function regSave(){
+ var n=$('rN').value.trim(),p=$('rP').value.trim(),e=$('rE').value.trim().toLowerCase(),w=$('rW').value,a=$('rA').value.trim();
+ if(!n||!p||!e||!a){toast('Заповніть усі поля');return}if(e.indexOf('@')<1){toast('Некоректний email');return}if(w.length<6){toast('Пароль — мінімум 6 символів');return}
+ var salt=Math.random().toString(36).slice(2),pw=await sha(w,salt);
+ var np=Object.assign({},profile,{name:n,phone:p,addr:a,email:e,salt:salt,pw:pw});
+ try{await db.collection('data/users/'+uid).doc('profile').set(np);profile=np;setIn(true);toast('Вітаємо! Ви зареєстровані');rerender()}catch(x){toast('Не вдалося зареєструватися')}
+}
+async function loginDo(){
+ var e=$('lE').value.trim().toLowerCase(),w=$('lP').value;
+ if(e===LOGIN&&w===PASS){if(!isEd){toast('Адмін-панель відкривається лише власнику сайту, залогіненому в claude.ai');return}try{sessionStorage.setItem(SES,'1')}catch(x){}$('drawer').classList.remove('on');location.hash='admin';return}
+ if(!profile||!profile.pw){toast('Акаунт не знайдено — зареєструйтесь');authTab='reg';rerender();return}
+ if(e!==profile.email||await sha(w,profile.salt)!==profile.pw){toast('Невірний email або пароль');return}
+ setIn(true);toast('Ви увійшли');rerender()
+}
+async function profSave(){
+ var n=$('pN').value.trim(),p=$('pP').value.trim(),a=$('pA').value.trim();if(!n||!p||!a){toast('Заповніть усі поля');return}
+ var np=Object.assign({},profile,{name:n,phone:p,addr:a});
+ try{await db.collection('data/users/'+uid).doc('profile').set(np);profile=np;toast('Збережено');rerender()}catch(x){toast('Не вдалося зберегти')}
+}
+function renderCart(){
+ var tot=0,h='<div class="row" style="border:0"><h2>Кошик</h2><button class="btn o s" data-close="1">Закрити</button></div>';
+ if(!cart.length)h+='<p style="color:var(--mt)">Кошик порожній</p>';
+ else{cart.forEach(function(i){var p=pf(i.id);if(!p)return;tot+=p.price*i.q;h+='<div class="row"><div>'+esc(p.name)+'<br><small style="color:var(--mt)">'+p.price+' ₴</small></div><div><button class="btn o s" data-m="'+esc(p.id)+'">−</button> '+i.q+' <button class="btn o s" data-add="'+esc(p.id)+'">+</button></div></div>'});
+ h+='<h3 style="margin:16px 0">Разом: '+tot+' ₴</h3>';
+ if(!uid||!db)h+=authBlock();
+ else if(logged())h+='<div class="note">Доставка: '+esc(profile.name)+', '+esc(profile.phone)+', '+esc(profile.addr)+'</div><button class="btn" id="ordBtn" style="width:100%">Оформити замовлення</button>';
+ else h+='<div class="note">Щоб оформити замовлення, увійдіть або зареєструйтесь.</div>'+forms()}
+ $('cart').innerHTML=h;
+}
+async function renderAcct(){
+ var h='<div class="row" style="border:0"><h2>Мій кабінет</h2><button class="btn o s" data-close="1">Закрити</button></div>';
+ if(!uid||!db)h+=authBlock();
+ else if(!logged())h+=forms();
+ else{h+='<div class="box"><h3>Мої дані</h3>'+profForm()+'</div>';
+  h+=profile.orders&&profile.orders.length?'<h3>Мої замовлення</h3><div id="myo">Завантаження…</div>':'<p style="color:var(--mt)">Замовлень поки немає.</p>'}
+ $('cart').innerHTML=h;
+ if($('myo')){var o=profile.orders.slice().reverse(),hs='';
+  for(var k=0;k<o.length;k++){var st='Нове';try{var s=await db.collection('status').doc(o[k].id).get();if(s.exists)st=s.data().s}catch(e){}
+   hs+='<div class="box"><b>'+esc(o[k].date)+'</b><br>'+o[k].items.map(esc).join('; ')+'<br><b>'+o[k].total+' ₴</b> — статус: <b style="color:var(--ac2)">'+esc(st)+'</b></div>'}
+  if($('myo'))$('myo').innerHTML=hs}
+}
+function addC(id){var i=cart.find(function(x){return x.id===id});if(i)i.q++;else cart.push({id:id,q:1});saveCart();renderShop();if(mode==='cart')renderCart()}
+function subC(id){var i=cart.find(function(x){return x.id===id});if(i&&--i.q<=0)cart=cart.filter(function(x){return x!==i});saveCart();renderShop();renderCart()}
+async function order(){
+ var tot=0,items=cart.map(function(i){var x=pf(i.id);if(!x)return '';tot+=x.price*i.q;return x.name+(x.sku?' (арт. '+x.sku+')':'')+' × '+i.q}).filter(Boolean);
+ if(!items.length||!logged())return;
+ var o={id:'o'+Date.now().toString(36)+Math.random().toString(36).slice(2,6),date:new Date().toLocaleString('uk-UA'),items:items,total:tot,uid:uid,name:profile.name,phone:profile.phone,addr:profile.addr};
+ try{var r=db.collection('orders').doc(uid),s=await r.get(),l=(s.exists&&s.data().list)||[];l.push(o);await r.set({list:l});
+  var np=Object.assign({},profile,{orders:(profile.orders||[]).concat([{id:o.id,date:o.date,items:items,total:tot}])});
+  await db.collection('data/users/'+uid).doc('profile').set(np);profile=np}catch(e){toast('Помилка оформлення, спробуйте ще раз');return}
+ cart=[];saveCart();renderShop();$('cart').innerHTML='<h2>Дякуємо!</h2><p>Замовлення прийнято. Статус можна дивитися в розділі «Кабінет».</p><button class="btn" data-close="1">Закрити</button>';
+}
+
+function delBtn(k){return '<button class="btn d s" data-del="'+esc(k)+'">'+(pend===k?'Точно видалити?':'Видалити')+'</button>'}
+async function renderAdmin(){
+ var a=$('adm');
+ if(!isAdm()){a.innerHTML='<div class="box" style="max-width:380px;margin:40px auto"><h2>Вхід в адмін-панель</h2><p style="color:var(--mt)">MOM HOME</p><label>Логін</label><input id="lg" autocomplete="username"><label>Пароль</label><input id="pw" type="password" autocomplete="current-password"><button class="btn" id="lgBtn" style="width:100%">Увійти</button><p style="text-align:center"><a href="#">← До магазину</a></p></div>';return}
+ var h='<div class="row" style="border:0"><h2>Адмін-панель</h2><div><a class="btn o s" href="#">До магазину</a> <button class="btn d s" id="out">Вийти</button></div></div><div class="tabs">'+[['p','Товари'],['c','Категорії'],['o','Замовлення'],['b','Банер']].map(function(x){return '<button class="chip'+(tab===x[0]?' on':'')+'" data-t="'+x[0]+'">'+x[1]+'</button>'}).join('')+'</div>';
+ if(tab==='p'){
+  var e=pf(editId)||{name:'',cat:cats[0],price:'',desc:'',img:'',sku:'',fabric:'',size:'',kit:''};if(editId&&!imgUrl)imgUrl=e.img||'';
+  h+='<div class="box"><h3>'+(editId?'Редагувати товар':'Новий товар')+'</h3><div class="two"><div><label>Назва</label><input id="fN" value="'+esc(e.name)+'"></div><div><label>Категорія</label><select id="fC">'+cats.map(function(c){return '<option'+(c===e.cat?' selected':'')+'>'+esc(c)+'</option>'}).join('')+'</select></div><div><label>Артикул (позиція)</label><input id="fS" value="'+esc(e.sku)+'"></div><div><label>Ціна, ₴</label><input id="fP" type="number" min="0" value="'+esc(e.price)+'"></div><div><label>Тканина (сатин, ранфорс, льон…)</label><input id="fT" value="'+esc(e.fabric)+'"></div><div><label>Розмір (євро, двоспальний…)</label><input id="fZ" value="'+esc(e.size)+'"></div></div><label>Комплектація (що входить)</label><input id="fK" placeholder="Підковдра, простирадло, 2 наволочки" value="'+esc(e.kit)+'"><label>Опис</label><textarea id="fD" rows="3">'+esc(e.desc)+'</textarea><label>Фото</label><input id="fF" type="file" accept="image/*"><div id="fI" style="margin-bottom:10px">'+(imgUrl?'<img class="th" src="'+esc(imgUrl)+'" alt=""> ':'')+'</div><button class="btn" id="saveP">'+(editId?'Зберегти':'Опублікувати')+'</button> '+(editId?'<button class="btn o" id="cnl">Скасувати</button>':'')+'</div><div class="box tw"><table><tr><th></th><th>Арт.</th><th>Назва</th><th>Тканина</th><th>Розмір</th><th>Категорія</th><th>Ціна</th><th></th></tr>'+prods.map(function(p){return '<tr><td>'+(p.img?'<img class="th" src="'+esc(p.img)+'" alt="">':'')+'</td><td>'+esc(p.sku)+'</td><td>'+esc(p.name)+'</td><td>'+esc(p.fabric)+'</td><td>'+esc(p.size)+'</td><td>'+esc(p.cat)+'</td><td>'+p.price+' ₴</td><td style="white-space:nowrap"><button class="btn o s" data-e="'+esc(p.id)+'">Ред.</button> '+delBtn('p|'+p.id)+'</td></tr>'}).join('')+'</table></div>';
+ }else if(tab==='c'){
+  h+='<div class="box"><h3>Категорії</h3><div style="display:flex;gap:8px"><input id="nc" placeholder="Нова категорія" style="margin:0"><button class="btn" id="addCat">Додати</button></div>'+catDocs.map(function(c){return '<div class="row"><span>'+esc(c.name)+'</span>'+delBtn('c|'+c.id)+'</div>'}).join('')+'</div>';
+ }else if(tab==='b'){
+  if(!bImg&&ban.img&&!bannerDirty)bImg=ban.img;
+  h+='<div class="box"><h3>Банер на головній</h3><label>Смужка над меню (порожньо — сховати)</label><input id="bS" value="'+esc(ban.strip===undefined?'Безкоштовна доставка від 2000 ₴ · Оплата при отриманні':ban.strip)+'"><label>Заголовок</label><input id="bT" value="'+esc(ban.title||'Затишок, який обіймає щоночі')+'"><label>Текст</label><textarea id="bP" rows="2">'+esc(ban.text||'М’яка постільна білизна з натуральних тканин — бавовна, сатин, льон. Для вашого дому з турботою.')+'</textarea><label>Текст кнопки</label><input id="bB" value="'+esc(ban.btn||'До каталогу')+'"><label>Фонове фото банера</label><input id="bF" type="file" accept="image/*"><div id="bI" style="margin-bottom:10px">'+(bImg?'<img class="th" src="'+esc(bImg)+'" alt=""> <button class="btn o s" id="bNo">Прибрати фото</button>':'')+'</div><button class="btn" id="saveB">Зберегти банер</button></div>';
+ }else{h+='<div id="ord">Завантаження…</div>'}
+ a.innerHTML=h;
+ if(tab==='o'){
+  var all=[],sm={};try{var os=await db.collection('orders').get();os.docs.forEach(function(d){all=all.concat((d.data().list)||[])});var ss=await db.collection('status').get();ss.docs.forEach(function(d){sm[d.id]=d.data().s})}catch(e){}
+  all.sort(function(x,y){return x.id<y.id?1:-1});
+  var el=$('ord');if(el)el.innerHTML=all.length?all.map(function(o){var st=sm[o.id]||'Нове';return '<div class="box"><b>'+esc(o.date)+'</b> — '+esc(o.name)+', '+esc(o.phone)+'<br>'+esc(o.addr)+'<br>'+o.items.map(esc).join('; ')+'<br><b>'+o.total+' ₴</b><div style="display:flex;gap:8px;align-items:center;margin-top:8px"><select data-st="'+esc(o.id)+'" style="margin:0">'+ST.map(function(s){return '<option'+(s===st?' selected':'')+'>'+s+'</option>'}).join('')+'</select>'+delBtn('o|'+o.uid+'|'+o.id)+'</div></div>'}).join(''):'<p style="color:var(--mt)">Замовлень поки немає.</p>'}
+}
+async function wr(fn,ok){try{await fn();if(ok)toast(ok)}catch(e){toast('Немає прав запису. Увійдіть як власник сайту.')}}
+
+document.addEventListener('click',function(ev){
+ var t=ev.target,g=function(a){var n=t.closest('['+a+']');return n?n.getAttribute(a):null},v;
+ if(t.id==='cartBtn'){mode='cart';renderCart();$('drawer').classList.add('on')}
+ else if(t.id==='acctBtn'){mode='acct';renderAcct();$('drawer').classList.add('on')}
+ else if(g('data-close')||t===$('drawer'))$('drawer').classList.remove('on');
+ else if((v=g('data-c'))!==null){cur=v;renderShop()}
+ else if((v=g('data-add')))addC(v);
+ else if((v=g('data-m')))subC(v);
+ else if((v=g('data-at'))){authTab=v;rerender()}
+ else if(t.id==='ordBtn')order();
+ else if(t.id==='regBtn')regSave();
+ else if(t.id==='loginBtn')loginDo();
+ else if(t.id==='profBtn')profSave();
+ else if(t.id==='logoutBtn'){setIn(false);authTab='in';rerender()}
+ else if(t.id==='lgBtn'){if($('lg').value!==LOGIN||$('pw').value!==PASS)toast('Невірний логін або пароль');else if(!isEd)toast('Увійдіть у claude.ai як власник сайту');else{try{sessionStorage.setItem(SES,'1')}catch(e){}renderAdmin()}}
+ else if(t.id==='out'){try{sessionStorage.removeItem(SES)}catch(e){}renderAdmin()}
+ else if((v=g('data-t'))){tab=v;editId=null;imgUrl='';bImg='';bannerDirty=false;pend='';renderAdmin()}
+ else if((v=g('data-e'))){editId=v;imgUrl='';pend='';renderAdmin();scrollTo(0,0)}
+ else if(t.id==='cnl'){editId=null;imgUrl='';renderAdmin()}
+ else if((v=g('data-del'))){
+  if(pend!==v){pend=v;renderAdmin();return}
+  pend='';var k=v.split('|');
+  if(k[0]==='p')wr(function(){return db.collection('products').doc(k[1]).delete()},'Товар видалено');
+  else if(k[0]==='c')wr(function(){return db.collection('cats').doc(k[1]).delete()},'Категорію видалено');
+  else if(k[0]==='o')wr(async function(){var r=db.collection('orders').doc(k[1]),s=await r.get(),l=((s.exists&&s.data().list)||[]).filter(function(o){return o.id!==k[2]});await r.set({list:l});try{await db.collection('status').doc(k[2]).delete()}catch(e){}},'Замовлення видалено').then(renderAdmin);
+  setTimeout(renderAdmin,400)}
+ else if(t.id==='saveP'){
+  var n=$('fN').value.trim(),pr=+$('fP').value;if(!n||!(pr>0)){toast('Вкажіть назву та ціну');return}
+  var id=editId||'p'+Date.now(),old=pf(editId);
+  wr(function(){return db.collection('products').doc(id).set({name:n,cat:$('fC').value,price:pr,sku:$('fS').value.trim(),fabric:$('fT').value.trim(),size:$('fZ').value.trim(),kit:$('fK').value.trim(),desc:$('fD').value.trim(),img:imgUrl,t:old&&old.t?old.t:Date.now()})},'Опубліковано').then(function(){editId=null;imgUrl='';renderAdmin()})}
+ else if(t.id==='addCat'){var c=$('nc').value.trim();if(c&&cats.indexOf(c)<0)wr(function(){return db.collection('cats').doc('c'+Date.now()).set({name:c,t:Date.now()})},'Додано')}
+ else if(t.id==='bNo'){bImg='';bannerDirty=true;renderAdmin()}
+ else if(t.id==='saveB')wr(function(){return db.collection('settings').doc('banner').set({strip:$('bS').value.trim(),title:$('bT').value.trim(),text:$('bP').value.trim(),btn:$('bB').value.trim(),img:bImg})},'Банер збережено').then(function(){bannerDirty=false});
+});
+document.addEventListener('change',async function(ev){
+ var t=ev.target;
+ if((t.id==='fF'||t.id==='bF')&&t.files[0]){var b=t.id==='bF',box=$(b?'bI':'fI');try{var as=await claude.use('assets');if(!as){toast('Завантаження фото доступне лише власнику');return}box.textContent='Завантаження…';var r=await as.upload(t.files[0]);if(b){bImg=r.url;bannerDirty=true}else imgUrl=r.url;box.innerHTML='<img class="th" src="'+esc(r.url)+'" alt=""> Фото додано'}catch(e){toast('Не вдалося завантажити фото')}}
+ else if(t.getAttribute&&t.getAttribute('data-st'))wr(function(){return db.collection('status').doc(t.getAttribute('data-st')).set({s:t.value})},'Статус оновлено');
+});
+function route(){var ad=location.hash==='#admin';$('shop').style.display=ad?'none':'';$('admin').style.display=ad?'':'none';if(ad)renderAdmin();else renderShop()}
+addEventListener('hashchange',route);route();init();
+</script>
+</body>
+</html>
